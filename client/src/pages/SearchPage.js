@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import { Container } from "../components/Grid";
-import Nav from "../components/Nav";
 import Jumbotron from "../components/Jumbotron";
 import SearchBox from "../components/SearchBox";
 import SubmitBtn from "../components/SubmitBtn";
@@ -43,7 +42,7 @@ class SearchPage extends Component {
 
     saveGoogleBook = currentBook => {
         console.log("This is the current book", currentBook);
-        API.saveBook({
+        API.saveBooks({
             id: currentBook.id,
             title: currentBook.title,
             authors: currentBook.authors,
@@ -58,7 +57,6 @@ class SearchPage extends Component {
     render() {
         return (
             <div>
-                <Nav />
                 <Container fluid>
                 <Jumbotron />
                 <form>

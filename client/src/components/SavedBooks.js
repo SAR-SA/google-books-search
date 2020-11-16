@@ -1,10 +1,9 @@
 import React from "react";
-import { Component } from "react";
 
 
-function Books(props) {
+function SavedBooks(props) {
     const onClickFunc = () => {
-        props.saveGoogleBook(props);
+        props.deleteGoogleBook.bind(props);
     }
 
     return (
@@ -17,11 +16,11 @@ function Books(props) {
                 <p className="card-text">{props.description}</p>
                 <p>Author(s): {props.author}</p>
                 <a href={props.link} target="_blank" className="btn btn-primary" style={{marginRight: "6px"}}>View Book</a>
-                <button onClick={onClickFunc} className="btn">Save</button>
+                <button onClick={onClickFunc} className="btn">Delete</button>
             </div>
             </div>
         </div>
     )
 }
   
-  export default Books
+  export default SavedBooks
