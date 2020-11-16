@@ -1,11 +1,11 @@
 import React from "react";
 import { Component } from "react";
-import SavedBooks from "../components/SavedBooks";
+import SavedBooks from "./SavedBooks";
 
-class SavedBooksList extends Component {
+class SavedListBooks extends Component {
     render () {
         return (
-            this.props.bookstate.map((book) => (
+            this.props.bookState.map((book) => (
                 <SavedBooks 
                    key={book._id}
             id={book._id}
@@ -21,4 +21,4 @@ class SavedBooksList extends Component {
     }
 }
 
-export default SavedBooksList;
+export default SavedListBooks;
