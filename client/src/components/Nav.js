@@ -14,7 +14,7 @@ function NavTop() {
       <Nav.Link href="/contact">Contact</Nav.Link>
     </Nav> */}
         <Navbar className="navBar" collapseOnSelect expand="lg" bg="light" variant="light">
-          <Navbar.Brand id="name">Shawn A. Rather</Navbar.Brand>
+          <Navbar.Brand id="name"></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto" >

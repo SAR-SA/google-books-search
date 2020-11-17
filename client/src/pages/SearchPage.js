@@ -58,7 +58,7 @@ class SearchPage extends Component {
         return (
             <div>
                 <Container fluid>
-                <Jumbotron />
+                {/* <Jumbotron /> */}
                 <form>
                     <h5>Search for books</h5>
                     <SearchBox 
