@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Container } from "../components/Grid";
+import { Container } from "react-bootstrap";
 import Jumbotron from "../components/Jumbotron";
 import SearchBox from "../components/SearchBox";
 import SubmitBtn from "../components/SubmitBtn";
@@ -57,13 +57,14 @@ class SearchPage extends Component {
     render() {
         return (
             <div>
-                <Container fluid>
-                {/* <Jumbotron /> */}
+                <Jumbotron />
+                <Container>
                 <form>
                     <h5>Search for books</h5>
                     <SearchBox 
                         value={this.state.search}
                         onChange={this.handleInputChange}
+                        onClick={this.handleFormSubmit}
                         name="search"
                         placeholder="e.g. Ready Player One"
                     />
@@ -77,11 +78,9 @@ class SearchPage extends Component {
                     </ListBooks>
                 ) : (
                     <div>
-                        <hr/>
-                    <p>No results to display</p>
+                    
                     </div>
                 )}
-                
                 </Container>
             </div>
         )

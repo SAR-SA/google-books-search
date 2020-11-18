@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function SearchBox(props) {
     return (
         <div className="form-group">

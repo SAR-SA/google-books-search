@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import { Container } from "react-bootstrap";
 // import Nav from "../components/Nav";
 import Jumbotron from "../components/Jumbotron";
 import API from '../utils/API';
@@ -46,6 +47,8 @@ class Saved extends Component {
             <div>
                 {/* <Container fluid> */}
                 <Jumbotron />
+                <Container>
+                <h1>Saved Books</h1>
                 {this.state.savedBooks.length ? (
                     <SavedListBooks 
                     bookState={this.state.savedBooks}
@@ -56,6 +59,7 @@ class Saved extends Component {
                     <h5>No results to display</h5>
                 )}
                 {/* </Container> */}
+                </Container>
             </div>
         )
     }
