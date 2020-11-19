@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/google-books-search">
       <div>
       <Nav />
         <Switch>
