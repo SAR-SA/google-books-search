@@ -1,29 +1,39 @@
-# Create React Express App
+# Google Books Search
 
-## About This Boilerplate
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Table of Contents
+- [Description](#descriptiongo)
+- [Installation Instructions](#installgo)
+- [Usage](#usagego)
+- [Authors](#authorgo)
+- [Deployed Links](#deployedgo)
+- [Questions](#contactgo)
+        
+## Description<a id='descriptiongo'></a>
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+A full stack MERN react application
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Installation Instructions<a id="installgo"></a>
 
-## Starting the app locally
+React.JS 
+## Usage<a id="usagego"></a>
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+This App is used to search and save books from the entire Google Books library.
+## License<a id="licensego"></a>
 
-```
-npm install
-```
+MIT License
 
-This should install node modules within the server and the client folder.
+## Authors<a id="authorgo"></a>
 
-After both installations complete, run the following command in your terminal:
+Shawn A. Rather
 
-```
-npm start
-```
+## Deployed<a id="deployedgo"></a>
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+https://morning-inlet-35060.herokuapp.com/
+## Questions<a id="contactgo"></a>
 
-## Deployment (Heroku)
+Refer to github or send email with any questions:
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+SAR-SA
+
+sarsa.web@gmail.com
